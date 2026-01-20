@@ -49,6 +49,24 @@ type CaseBlockProps = {
   content: string;
 };
 
+export type CaseStudy = {
+  id: string;
+  title: string;
+  summary: string;
+  aiContext: string;
+};
+
+export const caseStudies: CaseStudy[] = [
+  {
+    id: "smart-crm",
+    title: "Smart CRM Automation",
+    summary:
+      "An AI-enhanced CRM platform that automates customer engagement and insights.",
+    aiContext:
+      "Smart CRM Automation built with React, Node.js, deployed on Google Cloud Run, and enhanced with Gemini AI for intelligent workflow automation, customer insights, and response generation.",
+  },
+];
+
 function CaseBlock({ title, content }: CaseBlockProps) {
   return (
     <div>
